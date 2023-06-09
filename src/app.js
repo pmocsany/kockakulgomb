@@ -17,9 +17,11 @@ function init(){
 }
 
 function onClickCalcButton(){
-    doc.calcButton.addEventListener('click', () =>{
+    if(doc.calcButton){
+        doc.calcButton.addEventListener('click', () =>{
         startCalc()
     })
+}
 }
 
 function startCalc(){
